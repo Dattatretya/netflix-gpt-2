@@ -8,7 +8,6 @@ const Browse = () => {
 
   useNowPlayingMovies()
 
-  // const movies = useSelector(store=>store.movies.nowPlayingMovies)
 
   return (
     <div>
