@@ -6,6 +6,7 @@ import {auth} from "../utils/firebase"
 import { useNavigate } from 'react-router-dom';
 import {useDispatch} from "react-redux"
 import { addUser } from '../utils/userSlice';
+import { BACKGROUND } from '../utils/constants';
 
 const Login = () => {
 
@@ -87,11 +88,11 @@ const Login = () => {
     <div>
         <Header />
         <div className='absolute h-auto'>
-        <img src='https://assets.nflxext.com/ffe/siteui/vlv3/9d3533b2-0e2b-40b2-95e0-ecd7979cc88b/a3873901-5b7c-46eb-b9fa-12fea5197bd3/IN-en-20240311-popsignuptwoweeks-perspective_alpha_website_small.jpg' alt='background netflix'
+        <img src={BACKGROUND} alt='background netflix'
         className='sm:bg-repeat'
         />
         </div>
-        <form onSubmit={(e)=>e.preventDefault()} className='absolute w-3/12 p-12 bg-black mt-24 my-36 mx-auto right-0 left-0 text-white rounded-lg bg-opacity-90
+        <form onSubmit={(e)=>e.preventDefault()} className='absolute md:w-3/12 p-12 bg-black mt-24 my-36 mx-auto right-0 left-0 text-white rounded-lg bg-opacity-90
         sm:w-1/2
         '>
             <h1 className='font-bold text-3xl py-4'>{isSignInForm? "Sign In" : "Sign Up"}</h1>

@@ -12,7 +12,7 @@ const SecondaryContainer = () => {
   useTopRatedMovies()
 
   const movies = useSelector(store=>store.movies)
-  console.log(movies)
+  
 
   return (
     <div className=' bg-black'>
